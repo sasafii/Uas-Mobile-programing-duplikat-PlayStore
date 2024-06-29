@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:dividerPadding="10sp"
+    android:orientation="vertical"
+    android:outlineProvider="paddedBounds"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="302dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="clip_horizontal"
+        android:gravity="clip_horizontal"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/counter_title"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="Counter Title"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/counter_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/setCount"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </LinearLayout>
+
+</LinearLayout>
